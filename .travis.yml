@@ -1,0 +1,13 @@
+language: go
+go: 1.12.x 
+git:
+  submodules: false
+env:
+- GO111MODULE=on
+before_install:
+- sudo apt-get update -qq
+- sudo apt-get install -qq -y make
+install: true
+script:
+- make bootstrap
+- make test
