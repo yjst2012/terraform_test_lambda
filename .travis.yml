@@ -11,5 +11,5 @@ before_install:
 - cd /usr/local/bin && sudo unzip tf.zip
 install: true
 script:
-- make bootstrap
+#- make bootstrap
 - make test
